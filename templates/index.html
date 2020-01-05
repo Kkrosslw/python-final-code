@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<h2>{{ the_title }}</h2>
+{% block body %}
+    <style>
+    body{
+        background-image: url("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4124460130,220544870&fm=26&gp=0.jpg");
+        background-size: cover;
+
+    }
+    </style>
+<div>
+<center>
+<h1 style="color: cadetblue">全球星巴克 Starbucks</h1>
+</br>
+</br>
+</br>
+</br>
+<select autofocus method='POST' onchange="window.location=this.value; width='20'" style="width:300px;height: 30px;background-color: lavender;">
+  <option style="text-align: center;">-请点击进行选择-</option>
+  <option value="/all">信息表单</option>
+  <option value="/map">全球分布图</option> 
+  <option value="/country">各国门店排名</option>
+</select>
+</center>
+</div>
+</br>
+</br>
+</br>
+</br>
+{% endblock %}
